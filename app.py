@@ -7,7 +7,8 @@ model = None
 tokenizer = None
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
-
+import nltk
+nltk.download('punkt')
 try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
